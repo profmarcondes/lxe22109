@@ -30,6 +30,24 @@ Para permitir a conexão de dispositivos USB diretamente ao WSL, é necessário 
 
 Para instalar este componente, siga as instruções do site https://docs.microsoft.com/pt-br/windows/wsl/connect-usb
 
+```
+winget install --interactive --exact dorssel.usbipd-win
+```
+Instalar as ferramentas USBIP e o banco de dados de hardware no Linux
+
+Depois que o projeto USB/IP tiver concluído a instalação, você precisará instalar as ferramentas de espaço do usuário e um banco de dados de identificadores de hardware USB. Essas instruções são para o Ubuntu – outras distribuições podem exigir um pacote cliente usbip diferente.
+
+No Ubuntu 20.04, execute este comando:
+```
+sudo apt install linux-tools-5.4.0-77-generic hwdata
+sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20
+```
+No Ubuntu 22.04, execute este comando:
+```
+sudo apt install linux-tools-5.15.0-67-generic hwdata
+sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.15.0-67-generic/usbip 20
+```
+
 Após instalado, utilizaremos os seguintes comandos para conectar um dispositivo USB no Ubuntu do WSL.
 
 Em uma interface do PowerShell, utilize o comando abaixo para listar todos os dispositivos que estão conectados na USB do computador. 
