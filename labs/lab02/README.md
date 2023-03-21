@@ -18,7 +18,7 @@ Agora que discutimos durante as palestras a organização da árvore de saída B
    - Identifique onde o sistema de arquivos raiz de destino foi criado e leia o arquivo `THIS_IS_NOT_YOUR_ROOT_FILESYSTEM`.
    - Veja para onde o link simbólico de 'staging' está apontando.
   
-## Utilização da sibreposição do rootfs para configurar a rede
+## Utilização da sobreposição do rootfs para configurar a rede
 
 Usaremos Ethernet sobre USB para fornecer conectividade de rede entre nosso sistema embarcado e o PC de desenvolvimento. Para conseguir isso, precisaremos:
 
