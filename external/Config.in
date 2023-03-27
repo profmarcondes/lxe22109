@@ -1,0 +1,9 @@
+# Place holder for load packages Config.in
+
+
+# menu "Games"
+#       source "$BR2_EXTERNAL_LXE22109_PATH/package/ninvaders/Config.in"
+# endmenu
+# menu "Libraries"
+#       source "$BR2_EXTERNAL_LXE22109_PATH/package/libfoo/Config.in"
+# endmenu
