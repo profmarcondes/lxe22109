@@ -113,7 +113,7 @@ Agora, inicialize o novo sistema no BeagleBone Black. Você deve ver uma mensage
 Starting dropbear sshd: OK
 ```
 
-Agora, no seu PC, voê pode conectar na BeagleBone, através do comando:
+Agora, no seu PC, você pode conectar na BeagleBone, através do comando:
 
 ssh root@192.168.0.1
 
