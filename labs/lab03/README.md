@@ -101,7 +101,7 @@ Este patch está disponível no diretório deste laboratório, sob o nome [/labs
 
 Copie este patch para o local correto para que seja aplicado após o nInvaders ser extraído pelo Buildroot e antes de ser construído. Reconstrua novamente o pacote ninvaders. Verifique se o patch é aplicado na etapa `ninvaders 0.1.1 Patching`.
 
-No entanto, esse patch depende da interface do joystick do kernel Linux, que precisamos habilitar. Vá para a configuração do kernel Linux usando make linux-menuconfig e habilite CONFIG_INPUT_JOYDEV. Saia e certifique-se de salvar sua configuração de kernel com segurança usando `make linux-updatedefconfig`. Reinicie a compilação geral executando make.
+No entanto, esse patch depende da interface do joystick do kernel Linux, que precisamos habilitar. Vá para a configuração do kernel Linux usando make linux-menuconfig e habilite CONFIG_INPUT_JOYDEV. Saia e certifique-se de salvar sua configuração de kernel com segurança usando `make linux-update-defconfig`. Reinicie a compilação geral executando make.
 
 Em seguida, atualize a sua imagem de kernel e o sistema de arquivos raiz no cartão SD, reinicie e inicie nInvaders em uma sessão SSH. Agora você deve ser capaz de controlá-lo usando o joystick do Nunchuk e disparar com o botão C.
 
